@@ -208,8 +208,9 @@ footer a {
  .iphone-bar {
   display: flex;
   visibility: visible;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 219.5px;
  
 
   
@@ -219,9 +220,9 @@ footer a {
     line-height: 18px;
     text-align: center;
     width: 54px;
-    height: 14px;
+    height: 18px;
     margin-block-start: 14px;
-    margin-inline-start: 32px;
+    margin-inline-start: 20px;
    }
 
    > img {
@@ -245,6 +246,7 @@ footer a {
     display: block;
     margin-block-start: 0;
     width: 100%;
+    margin-inline: 24px;
   }
 
    .logo {
