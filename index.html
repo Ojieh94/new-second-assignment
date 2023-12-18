@@ -12,67 +12,75 @@
 		<link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
 	</head>
 	<body>
-		
-		<nav class="iphone-bar">
-			<div>9:41</div>
-			<img src="assets/images/Container.jpg" alt="status bar">
-		</nav>
-		
-			<div class="left-side">
-				<div><img src="assets/images/Logo.png" alt="logo" class="logo" /></div>
-				<div class="purpose">For Individuals</div>
-				<div class="paragraph">
-					<!-- paragraph for desktop -->
-					<p class="default-paragraph">
-						Start benefiting from the wellness experience. For companies looking
-						on increasing productivity, and improving organization wellness.
-					</p>
+		<div class="left-side">
+			<div><img src="assets/images/Logo.png" alt="logo" class="logo" /></div>
+			<div class="purpose">For Individuals</div>
+			<div class="paragraph">
+				<!-- paragraph for desktop -->
+				<p class="default-paragraph">
+					Start benefiting from the wellness experience. For companies looking
+					on increasing productivity, and improving organization wellness.
+				</p>
 
-					<!-- paragraph for mobile devices -->
-					<p class="mobile-paragraph">
-						Inspiring wholesome harmony for the mind, body and spirit, for
-						everyone, everywhere.
-					</p>
-				</div>
+				<!-- paragraph for mobile devices -->
+				<p class="mobile-paragraph">
+					Inspiring wholesome harmony for the mind, body and spirit, for
+					everyone, everywhere.
+				</p>
 			</div>
-			<form action="" method="post"  class="right-side">
-				<div class="details">
+		</div>
+		<form action="" method="post" class="right-side">
+			<div class="details">
+				<div>
+					<label for="firstName">First Name</label>
+					<input type="text" id="firstName" placeholder="Tolu" required />
+				</div>
+				<div>
+					<label for="lastName">Last Name</label>
+					<input
+						type="text"
+						id="lastName"
+						name="lastName"
+						placeholder="Bolu"
+						required
+					/>
+				</div>
+				<div>
+					<label for="gender">Gender</label>
+					<select name="gender" id="gender">
+						<option value="select" disabled selected>Select here</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+				</div>
+				<div>
+					<label for="dateOfBirth">Date of birth</label>
+					<input type="date" id="dateOfBirth" name="dateOfBirth" />
+				</div>
+				<div>
+					<label for="weight">Weight (KG)</label>
+					<input type="number" id="weight" placeholder="Enter weight" />
+				</div>
+				<div>
+					<label for="height">Height (CM)</label>
+					<input type="number" id="height" placeholder="Enter height here" />
+				</div>
+				<div class="mobile-visible">
+					<label for="activityLevelMobile">Activity Level</label>
+					<select name="activityLevelMobile" id="activityLevelMobile">
+						<option value="selectLevel" disabled selected>Select Level</option>
+						<option value="levelOne">Level 1</option>
+						<option value="levelTwo">Level 2</option>
+						<option value="levelThree">Level 3</option>
+					</select>
+					<label for="passwordMobile">Password</label>
+					<input type="password" id="passwordMobile" required />
+					<button type="button">Register</button>
+				</div>
+				<div class="bottom-section">
 					<div>
-						<label for="firstName">First Name</label>
-						<input type="text" id="firstName" placeholder="Tolu" required />
-					</div>
-					<div>
-						<label for="lastName">Last Name</label>
-						<input
-							type="text"
-							id="lastName"
-							name="lastName"
-							placeholder="Bolu"
-						required/>
-					</div>
-					<div>
-						<label for="gender">Gender</label>
-						<select name="gender" id="gender">
-							<option value="select" disabled selected>Select here</option>
-							<option value="male">Male</option>
-							<option value="female">Female</option>
-						</select>
-					</div>
-					<div>
-						<label for="dateOfBirth">Date of birth</label>
-						<input type="date" id="dateOfBirth" name="dateOfBirth" />
-					</div>
-					<div>
-						<label for="weight">Weight (KG)</label>
-						<input type="number" id="weight" placeholder="Enter weight" />
-					</div>
-					<div>
-						<label for="height">Height (CM)</label>
-						<input type="number" id="height" placeholder="Enter height here" />
-					</div>
-					<div class="mobile-visible">
-						<label for="activityLevelMobile">Activity Level</label>
-						<select name="activityLevelMobile" id="activityLevelMobile">
+						<label for="activityLevel">Activity Level</label>
+						<select name="activityLevel" id="activityLevel">
 							<option value="selectLevel" disabled selected>
 								Select Level
 							</option>
@@ -80,44 +88,29 @@
 							<option value="levelTwo">Level 2</option>
 							<option value="levelThree">Level 3</option>
 						</select>
-						<label for="passwordMobile">Password</label>
-						<input type="password" id="passwordMobile" required/>
-						<button type="button">Register</button>
+						<label for="password">Password</label>
+						<input type="password" id="password" required />
 					</div>
-					<div class="bottom-section">
-						<div>
-							<label for="activityLevel">Activity Level</label>
-							<select name="activityLevel" id="activityLevel">
-								<option value="selectLevel" disabled selected>
-									Select Level
-								</option>
-								<option value="levelOne">Level 1</option>
-								<option value="levelTwo">Level 2</option>
-								<option value="levelThree">Level 3</option>
-							</select>
-							<label for="password">Password</label>
-							<input type="password" id="password" required/>
-						</div>
-						<div>
-							<button type="submit">Register</button>
-						</div>
+					<div>
+						<button type="submit">Register</button>
 					</div>
 				</div>
-				<footer class="default-footer">
-					<p>
-						By clicking Register, you agree to our
-						<a href="" target="_blank">Terms of Use</a> and our
-						<a href="" target="_blank">Privacy Policy</a>
-					</p>
-				</footer>
-			</form>
-
-			<footer class="mobile-footer">
+			</div>
+			<footer class="default-footer">
 				<p>
 					By clicking Register, you agree to our
 					<a href="" target="_blank">Terms of Use</a> and our
 					<a href="" target="_blank">Privacy Policy</a>
 				</p>
 			</footer>
+		</form>
+
+		<footer class="mobile-footer">
+			<p>
+				By clicking Register, you agree to our
+				<a href="" target="_blank">Terms of Use</a> and our
+				<a href="" target="_blank">Privacy Policy</a>
+			</p>
+		</footer>
 	</body>
 </html>
