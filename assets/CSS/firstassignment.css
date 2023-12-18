@@ -218,7 +218,7 @@ footer a {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		width: 375px;
+		width: max-content;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
